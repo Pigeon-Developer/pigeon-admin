@@ -1,0 +1,45 @@
+$menu-bg: rgb(27, 36, 48);
+$logo-bg: #001529;
+
+$side-width: 256px;
+
+.container {
+  width: $side-width;
+  flex-shrink: 0;
+
+  .inner {
+    display: flex;
+    width: $side-width;
+    flex-direction: column;
+    outline: 0;
+    z-index: 1200;
+    position: fixed;
+    overflow-y: auto;
+  }
+}
+
+.logo {
+  background: $logo-bg;
+  color: white;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  padding: 16px 16px 16px 20px;
+
+  img {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+  }
+
+  span {
+    padding-left: 10px;
+  }
+}
+
+.menu {
+  background-color: $menu-bg;
+  color: rgba(255, 255, 255, 0.8);
+  flex: 1;
+  font-size: 14px;
+}

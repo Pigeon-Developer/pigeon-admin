@@ -1,0 +1,44 @@
+$bg-content: #f8f9fc;
+$header-height: 62px;
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  background: $bg-content;
+
+  .header {
+    min-height: $header-height;
+    box-shadow: rgba(53, 64, 82, 0.05) 0 0 14px 0;
+    background: white;
+    line-height: $header-height;
+    top: 0;
+    left: auto;
+    right: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+
+    .crumbs {
+    }
+
+    .tools {
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: .5rem;
+      }
+
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
+}
